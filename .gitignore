@@ -1,0 +1,14 @@
+# Dependencies and build output
+node_modules/
+dist/
+dist 2/
+
+# Packaged builds (attach to GitHub releases instead)
+*.zip
+
+# Landing page lives in its own repo (jiburney/carbon-tracker-landing)
+landing-page/
+
+# Local backups and OS files
+_backup-pre-v1.2/
+.DS_Store

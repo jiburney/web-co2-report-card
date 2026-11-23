@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to Carbon Footprint Tracker</title>
+  <style>
+    :root { color-scheme: light dark; }
+    body {
+      margin: 0; padding: 48px 24px;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #1a1a1a; color: #e5e5e5; line-height: 1.55;
+    }
+    main { max-width: 560px; margin: 0 auto; }
+    h1 { font-size: 1.6rem; margin: 0 0 8px; }
+    .leaf { font-size: 2.5rem; }
+    .card { background: #262626; border-radius: 12px; padding: 20px 24px; margin: 24px 0; }
+    .card h2 { font-size: 1rem; margin: 0 0 8px; color: #10b981; }
+    ul { margin: 0; padding-left: 20px; }
+    li { margin: 4px 0; }
+    button {
+      background: #10b981; color: #052e1f; border: 0; border-radius: 8px;
+      padding: 12px 22px; font-size: 1rem; font-weight: 600; cursor: pointer;
+    }
+    button:hover { background: #34d399; }
+    .muted { color: #a3a3a3; font-size: 0.9rem; }
+    @media (prefers-color-scheme: light) {
+      body { background: #f9fafb; color: #1f2937; }
+      .card { background: #ffffff; box-shadow: 0 1px 3px rgba(0,0,0,0.08); }
+      .card h2 { color: #047857; }
+      .muted { color: #6b7280; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="leaf">🌱</div>
+    <h1>Carbon Footprint Tracker</h1>
+    <p>Grade each page you visit and see an estimate of the CO₂ your browsing produces.</p>
+
+    <section id="intro">
+      <div class="card">
+        <h2>What this extension reads</h2>
+        <ul>
+          <li>The size of each network request a page makes, including ads and embedded content. The extension sees each request's address only long enough to measure it and keeps the size.</li>
+          <li>The domain name of the site you're on (for example, <em>youtube.com</em>), so it can grade the page and show your top sites.</li>
+          <li>When you open a "Why this grade?" report, the files on that page (their addresses, sizes, and types) and the size of its images. This is used for the report only and is not saved.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h2>Where it goes</h2>
+        <ul>
+          <li>Everything is stored on this device in your browser's extension storage.</li>
+          <li>Nothing is sent to any server. There are no accounts, analytics, or ads.</li>
+          <li>Full URLs, page content, and form data are never read.</li>
+          <li>You can erase all data at any time with <strong>Reset Counter</strong>, or by removing the extension.</li>
+        </ul>
+      </div>
+      <p><button id="start">Start tracking</button></p>
+      <p class="muted">Nothing is recorded until you click Start tracking.</p>
+    </section>
+
+    <section id="done" hidden>
+      <div class="card">
+        <h2>You're set</h2>
+        <p>Tracking is on. Pin the extension so the running total stays visible: click the puzzle-piece icon in Chrome's toolbar, then the pin next to Carbon Footprint Tracker.</p>
+        <p class="muted">You can close this tab.</p>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

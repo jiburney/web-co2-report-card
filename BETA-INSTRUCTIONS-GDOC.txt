@@ -1,0 +1,204 @@
+========================================
+CARBON FOOTPRINT TRACKER - BETA TESTING
+========================================
+
+Thanks for helping test! 🌍
+
+========================================
+INSTALLATION INSTRUCTIONS
+========================================
+
+CHROME / EDGE / BRAVE
+---------------------
+
+1. Download the extension
+   • Download and save the ZIP file I sent you
+   • Extract/unzip it to a folder on your computer
+
+2. Open Extensions Page
+   • Chrome: Type chrome://extensions/ in the address bar
+   • Edge: Type edge://extensions/
+   • Brave: Type brave://extensions/
+
+3. Enable Developer Mode
+   • Look for "Developer mode" toggle in the TOP RIGHT corner
+   • Click it to turn it ON
+
+4. Load the Extension
+   • Click "Load unpacked" button (top left)
+   • Select the "dist" folder inside the extracted folder
+   • Click "Select Folder"
+
+5. Done!
+   • You should see "Carbon Footprint Tracker" in your extensions list
+   • The icon should appear in your browser toolbar
+
+
+FIREFOX
+-------
+
+1. Download and extract the ZIP file
+
+2. Open Firefox Debugging Page
+   • Type about:debugging#/runtime/this-firefox in the address bar
+
+3. Load Temporary Extension
+   • Click "Load Temporary Add-on..."
+   • Navigate to the "dist" folder
+   • Select any file (like manifest.json)
+   • Click "Open"
+
+NOTE: In Firefox, the extension will be removed when you close the browser.
+This is normal for temporary add-ons.
+
+
+========================================
+WHAT TO TEST
+========================================
+
+1. BASIC FUNCTIONALITY
+   □ Visit several websites (YouTube, GitHub, Reddit, etc.)
+   □ Click the extension icon - counter should increase
+   □ Visit more sites - counter continues to grow
+   □ Close and reopen browser - counter persists
+
+2. BADGE COLORS
+   □ Icon badge starts green
+   □ After ~10 pages, badge turns yellow
+   □ Keep browsing - badge changes: orange → red → purple
+   □ Open popup - intensity indicator matches badge color
+
+3. COMPARISONS
+   □ Open popup - see comparison (e.g., "Like charging a smartphone")
+   □ Keep browsing - comparison updates
+   □ Different totals show different comparisons
+
+4. TOP SITES
+   □ Visit various sites multiple times
+   □ Open popup - see "Top Sites" section
+   □ Sites ranked by emissions
+   □ Percentages shown
+
+5. RESET FUNCTION
+   □ Click "Reset Counter"
+   □ Confirm the dialog
+   □ Counter resets to 0.0 g
+   □ Badge returns to green
+   □ Top sites list clears
+
+
+========================================
+WHAT TO LOOK FOR
+========================================
+
+BUGS
+• Does anything crash or throw errors?
+• Any visual glitches?
+• Does the counter ever go backwards?
+• Do the colors look wrong?
+
+PERFORMANCE
+• Does browsing feel slower?
+• Does your computer fan spin up?
+• Are pages loading normally?
+• Any lag when opening popup?
+
+ACCURACY
+• Do the emissions numbers seem reasonable?
+• Are heavy sites (YouTube) ranked higher?
+• Does the badge color reflect your browsing intensity?
+
+USER EXPERIENCE
+• Is the UI clear and understandable?
+• Are the comparisons helpful?
+• Is any information confusing?
+• What would you change?
+
+
+========================================
+REPORTING ISSUES
+========================================
+
+Please include this info when reporting issues:
+
+• Browser: Chrome/Firefox/Edge/Brave + version number
+• Operating System: Windows/Mac/Linux
+
+• What happened: (describe the issue)
+
+• Expected: (what you expected to happen)
+
+• Steps to reproduce:
+  1. First step
+  2. Second step
+  3. Result
+
+• Screenshot: (if applicable)
+
+
+========================================
+FEEDBACK QUESTIONS
+========================================
+
+After using for a few days, I'd love your thoughts on:
+
+1. First Impression: What's your immediate reaction?
+
+2. Clarity: Do you understand what the extension does?
+
+3. Value: Would you keep using this?
+
+4. Comparisons: Are they helpful or confusing?
+
+5. Badge: Is the color system useful?
+
+6. Top Sites: Does the breakdown help you understand your habits?
+
+7. Missing: What feature would you want to see next?
+
+
+========================================
+PRIVACY NOTE
+========================================
+
+All your data stays COMPLETELY LOCAL on your device.
+
+We don't collect any analytics, telemetry, or browsing data.
+The extension never makes external network requests.
+
+Your privacy is 100% protected.
+
+
+========================================
+KNOWN LIMITATIONS
+========================================
+
+• Firefox users: Extension is temporary (removed on browser restart)
+• Developer Mode Warning: Chrome shows a banner about extensions
+• No auto-updates: When new version releases, reinstall manually
+
+
+========================================
+GETTING UPDATES
+========================================
+
+When a new beta version is available:
+
+1. Delete the old extracted folder
+2. Download the new ZIP
+3. Extract it
+4. Go to chrome://extensions/
+5. Click the reload icon on Carbon Footprint Tracker
+   OR remove the old one and load the new folder
+
+
+========================================
+QUESTIONS?
+========================================
+
+Feel free to reach out with any questions or feedback!
+
+Thank you for helping make this extension better! 🙏
+
+
+========================================

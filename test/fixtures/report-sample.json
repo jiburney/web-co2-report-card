@@ -1,0 +1,223 @@
+{
+ "report": {
+  "host": "example.com",
+  "path": "/article/1",
+  "totalBytes": 2218000,
+  "totalGrams": 0.32866323999999997,
+  "grade": "E",
+  "gradeColor": "#dc2626",
+  "gradeBlurb": "Lighter than half of web pages (HTTP Archive, 2023)",
+  "projectedBytes": 1325324,
+  "projectedGrade": "C",
+  "projectedGradeColor": "#ca8a04",
+  "breakdown": [
+   {
+    "category": "Images",
+    "bytes": 1120000,
+    "files": 3
+   },
+   {
+    "category": "Scripts",
+    "bytes": 960000,
+    "files": 3
+   },
+   {
+    "category": "Documents",
+    "bytes": 80000,
+    "files": 2
+   },
+   {
+    "category": "Fonts",
+    "bytes": 40000,
+    "files": 1
+   },
+   {
+    "category": "Styles",
+    "bytes": 18000,
+    "files": 1
+   }
+  ],
+  "firstPartyBytes": 1528000,
+  "thirdPartyBytes": 690000,
+  "thirdPartyDomains": [
+   {
+    "domain": "doubleclick.net",
+    "bytes": 600000,
+    "files": 1
+   },
+   {
+    "domain": "googlesyndication.com",
+    "bytes": 50000,
+    "files": 1
+   },
+   {
+    "domain": "gstatic.com",
+    "bytes": 40000,
+    "files": 1
+   }
+  ],
+  "heaviest": [
+   {
+    "url": "https://www.example.com/img/hero.jpg",
+    "name": "hero.jpg",
+    "host": "www.example.com",
+    "category": "Images",
+    "bytes": 820000,
+    "thirdParty": false
+   },
+   {
+    "url": "https://securepubads.g.doubleclick.net/ad.js",
+    "name": "ad.js",
+    "host": "securepubads.g.doubleclick.net",
+    "category": "Scripts",
+    "bytes": 600000,
+    "thirdParty": true
+   },
+   {
+    "url": "https://www.example.com/js/app.js",
+    "name": "app.js",
+    "host": "www.example.com",
+    "category": "Scripts",
+    "bytes": 300000,
+    "thirdParty": false
+   },
+   {
+    "url": "https://www.example.com/img/photo.png",
+    "name": "photo.png",
+    "host": "www.example.com",
+    "category": "Images",
+    "bytes": 210000,
+    "thirdParty": false
+   },
+   {
+    "url": "https://www.example.com/img/ok.webp",
+    "name": "ok.webp",
+    "host": "www.example.com",
+    "category": "Images",
+    "bytes": 90000,
+    "thirdParty": false
+   },
+   {
+    "url": "https://cdn.example.com/js/cached.js",
+    "name": "cached.js",
+    "host": "cdn.example.com",
+    "category": "Scripts",
+    "bytes": 60000,
+    "thirdParty": false
+   }
+  ],
+  "checks": [
+   {
+    "id": "oversized-images",
+    "title": "Images larger than they are shown",
+    "passed": false,
+    "summary": "1 image is at least twice the size needed. Resizing could save about 573 KB.",
+    "advice": "Serve images at the size they appear, accounting for high-density screens. Use srcset so phones get smaller files than desktops.",
+    "savings": 586901,
+    "files": [
+     {
+      "url": "https://www.example.com/img/hero.jpg",
+      "name": "hero.jpg",
+      "host": "www.example.com",
+      "category": "Images",
+      "bytes": 820000,
+      "thirdParty": false,
+      "savings": 586901,
+      "note": "3000×2000 shown at 1600×1066"
+     }
+    ]
+   },
+   {
+    "id": "image-format",
+    "title": "Older image formats",
+    "passed": false,
+    "summary": "2 large JPEG, PNG, or GIF images. WebP or AVIF could save about 108 KB.",
+    "advice": "Convert photos to WebP or AVIF. Most image CDNs and build tools can do this automatically. Replace animated GIFs with video.",
+    "savings": 110775,
+    "files": [
+     {
+      "url": "https://www.example.com/img/hero.jpg",
+      "name": "hero.jpg",
+      "host": "www.example.com",
+      "category": "Images",
+      "bytes": 820000,
+      "thirdParty": false,
+      "savings": 58275,
+      "note": "JPEG"
+     },
+     {
+      "url": "https://www.example.com/img/photo.png",
+      "name": "photo.png",
+      "host": "www.example.com",
+      "category": "Images",
+      "bytes": 210000,
+      "thirdParty": false,
+      "savings": 52500,
+      "note": "PNG"
+     }
+    ]
+   },
+   {
+    "id": "compression",
+    "title": "Text files sent without compression",
+    "passed": false,
+    "summary": "1 HTML, CSS, or JavaScript file was sent uncompressed. gzip or Brotli could save about 190 KB.",
+    "advice": "Turn on Brotli or gzip compression on the server or CDN for HTML, CSS, JavaScript, JSON, and SVG.",
+    "savings": 195000,
+    "files": [
+     {
+      "url": "https://www.example.com/js/app.js",
+      "name": "app.js",
+      "host": "www.example.com",
+      "category": "Scripts",
+      "bytes": 300000,
+      "thirdParty": false,
+      "savings": 195000,
+      "note": "Not compressed"
+     }
+    ]
+   },
+   {
+    "id": "third-party",
+    "title": "Weight from third parties",
+    "passed": false,
+    "summary": "31% of this page (674 KB) comes from 3 other domains, such as ads, analytics, embeds, or fonts.",
+    "advice": "Review each third-party service for whether it earns its weight. Load embeds (video, maps, social) only when someone clicks them, and self-host fonts.",
+    "savings": 0,
+    "files": [
+     {
+      "url": "https://securepubads.g.doubleclick.net/ad.js",
+      "name": "ad.js",
+      "host": "securepubads.g.doubleclick.net",
+      "category": "Scripts",
+      "bytes": 600000,
+      "thirdParty": true
+     },
+     {
+      "url": "https://tpc.googlesyndication.com/frame.html",
+      "name": "frame.html",
+      "host": "tpc.googlesyndication.com",
+      "category": "Documents",
+      "bytes": 50000,
+      "thirdParty": true
+     },
+     {
+      "url": "https://fonts.gstatic.com/x.woff2",
+      "name": "x.woff2",
+      "host": "fonts.gstatic.com",
+      "category": "Fonts",
+      "bytes": 40000,
+      "thirdParty": true
+     }
+    ]
+   }
+  ],
+  "unmeasured": 0,
+  "fileCount": 10
+ },
+ "site": {
+  "grade": "D",
+  "color": "#ea580c",
+  "samples": 9
+ }
+}
