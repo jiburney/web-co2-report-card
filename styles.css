@@ -763,3 +763,5 @@ body {
 .grade-table .g { display: inline-block; min-width: 34px; text-align: center; color: #fff; font-weight: 700; border-radius: 6px; padding: 2px 6px; }
 .privacy-text a { color: inherit; text-decoration: underline; }
 .mock-site, .mock-week { color: var(--text-dark); text-align: left; }
+.brand { display: flex; align-items: center; gap: 12px; font-weight: 700; font-size: 1.1rem; margin-bottom: 18px; }
+.brand img { border-radius: 10px; }
