@@ -1,10 +1,12 @@
-# Chrome Web Store submission: Carbon Footprint Tracker v1.2.0
+# Chrome Web Store submission: Web CO2 Report Card v1.2.0
 
-Upload: `carbon-tracker-v1.2.0-store.zip` (manifest.json is at the zip root, as the store requires).
+Upload: `web-co2-report-card-v1.2.0.zip` (manifest.json is at the zip root, as the store requires).
 
 ## Store listing tab
 
-**Name:** Carbon Footprint Tracker
+**Name:** Web CO2 Report Card
+
+(Use the plain "2" in the store name so searches for "co2" match. The extension displays it as CO₂.)
 
 **Summary (132 char max):**
 Grade every site you visit for carbon, see why, and track your week. Runs locally; no data leaves your device.
@@ -15,7 +17,7 @@ Grade every site you visit for carbon, see why, and track your week. Runs locall
 
 **Description:**
 
-Every web page you load moves data through networks and data centers that use electricity. Carbon Footprint Tracker estimates the CO2 that data represents and keeps a running total as you browse.
+Every web page you load moves data through networks and data centers that use electricity. Web CO2 Report Card estimates the CO2 that data represents and keeps a running total as you browse.
 
 What you get
 - An A+ to F grade for every site you visit, shown on the toolbar icon. A site's grade is the median weight of the last 20 pages you loaded there, so it stays steady as you move around the site.
@@ -43,7 +45,7 @@ These are estimates. A few streamed responses don't report their size, so totals
 3. Welcome page showing the privacy disclosure
 4. Toolbar badge showing a page grade on a real site
 
-**Small promo tile (440x280):** required. Leaf + "Carbon Footprint Tracker" + one line.
+**Small promo tile (440x280):** required. Leaf + "Web CO2 Report Card" + one line.
 
 ## Privacy practices tab
 

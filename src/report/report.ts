@@ -113,7 +113,7 @@ async function main() {
         : 'Couldn’t read this page. Reload it and try again.'}</p>`;
       return;
     }
-    document.title = `Why ${res.report.grade}? ${res.report.host} · Carbon Footprint Tracker`;
+    document.title = `Why ${res.report.grade}? ${res.report.host} · Web CO₂ Report Card`;
     root.innerHTML = render(res.report as Report, res.site);
   });
 }

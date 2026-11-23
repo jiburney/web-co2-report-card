@@ -1,4 +1,4 @@
-# Carbon Footprint Tracker
+# Web CO₂ Report Card
 
 A Chrome/Firefox extension that tracks the estimated carbon emissions from your web browsing using CO2.js from the Green Web Foundation.
 

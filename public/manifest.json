@@ -1,17 +1,21 @@
 {
   "manifest_version": 3,
-  "name": "Carbon Footprint Tracker",
+  "name": "Web CO2 Report Card",
   "version": "1.2.0",
-  "description": "Grade each page you visit and estimate the CO2 from your browsing. Runs locally; no data leaves your device.",
+  "description": "A carbon grade for every website you visit, with a report on why. Runs locally; no data leaves your device.",
   "icons": {
     "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
     "48": "icons/icon48.png",
     "128": "icons/icon128.png"
   },
   "action": {
     "default_popup": "popup.html",
-    "default_icon": "icons/icon48.png",
-    "default_title": "Carbon Footprint Tracker"
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png"
+    },
+    "default_title": "Web CO2 Report Card"
   },
   "background": {
     "service_worker": "background.js"
@@ -33,5 +37,6 @@
   ],
   "host_permissions": [
     "<all_urls>"
-  ]
+  ],
+  "short_name": "CO2 Report Card"
 }

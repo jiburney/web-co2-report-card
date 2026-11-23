@@ -164,8 +164,11 @@ export const Popup: React.FC = () => {
   const theme = settings.darkMode ? 'dark' : 'light';
   const header = (
     <div className="header">
-      <div className="leaf-icon">🌱</div>
-      <h1>Your Carbon Footprint</h1>
+      <img className="app-icon" src="icons/icon48.png" width="32" height="32" alt="" />
+      <div className="title-block">
+        <h1>Web CO₂ Report Card</h1>
+        <div className="subtitle">Grades for the sites you visit</div>
+      </div>
       <button
         onClick={handleToggleDarkMode}
         className="theme-toggle"

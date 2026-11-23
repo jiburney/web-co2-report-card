@@ -1,5 +1,5 @@
 {
-  "name": "green-score-widget",
+  "name": "web-co2-report-card",
   "version": "1.2.0",
   "main": "index.js",
   "scripts": {
@@ -8,9 +8,9 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "James Burney",
+  "author": "",
   "license": "ISC",
-  "description": "Carbon Footprint Tracker browser extension",
+  "description": "Web CO2 Report Card browser extension",
   "dependencies": {
     "@tgwf/co2": "^0.17.0",
     "react": "^19.2.1",
