@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Carbon grades for every website, based on the data it loads. See why each site got its grade. Runs on your device.">
+    <title>Web CO₂ Report Card: carbon grades for every website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="icon128.png">
+</head>
+<body>
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="brand"><img src="icon128.png" width="44" height="44" alt=""><span>Web CO₂ Report Card</span></div>
+                    <h1>Carbon grades for every website</h1>
+                    <p class="tagline">Based on the data each site loads. See why a site got its grade and how your browsing changes from week to week. Everything runs on your device.</p>
+                    <div class="cta-buttons">
+                        <a href="#download" class="btn btn-primary">Download v1.2</a>
+                        <a href="#how-it-works" class="btn btn-secondary">How it works</a>
+                    </div>
+                    <div class="tech-stack">
+                        <span class="tech-badge">TypeScript</span>
+                        <span class="tech-badge">React</span>
+                        <span class="tech-badge">Manifest V3</span>
+                        <span class="tech-badge">CO2.js</span>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="extension-mockup">
+                        <div class="browser-chrome">
+                            <div class="browser-dots">
+                                <span></span><span></span><span></span>
+                            </div>
+                            <div class="browser-title">nytimes.com</div>
+                            <div class="mock-badge">D</div>
+                        </div>
+                        <div class="extension-preview">
+                            <div class="mock-site">
+                                <div class="mock-grade" style="background:#ea580c">D</div>
+                                <div>
+                                    <div class="mock-host">nytimes.com</div>
+                                    <div class="mock-detail">Typical page 1.4 MB · 0.23 g CO₂e</div>
+                                    <div class="mock-muted">Lighter than 60% of web pages</div>
+                                    <div class="mock-link">Why this grade? →</div>
+                                </div>
+                            </div>
+                            <div class="mock-week">
+                                <div class="mock-eyebrow">Sites you visited, last 7 days</div>
+                                <div class="mock-headline">12 of 30 sites grade C or better</div>
+                                <div class="mock-mix">
+                                    <span style="flex-grow:3;background:#059669">A+</span>
+                                    <span style="flex-grow:2;background:#10b981"></span>
+                                    <span style="flex-grow:4;background:#65a30d">B</span>
+                                    <span style="flex-grow:3;background:#ca8a04">C</span>
+                                    <span style="flex-grow:5;background:#ea580c">D</span>
+                                    <span style="flex-grow:4;background:#dc2626">E</span>
+                                    <span style="flex-grow:9;background:#9f1239">F</span>
+                                </div>
+                                <div class="mock-trend">Average page 0.18 g CO₂e, 40% lighter than last week</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <h2 class="section-title">What it does</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🅰️</div>
+                    <h3>A grade for every site</h3>
+                    <p>The toolbar badge shows each site's grade from A+ to F. It's based on the median weight of the last 20 pages you loaded there, so one unusual page doesn't swing it.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔍</div>
+                    <h3>Why this grade?</h3>
+                    <p>Open a report for any page to see where its weight comes from, its heaviest files, and specific fixes: oversized images, older image formats, uncompressed files, and third-party weight. Each fix shows an estimated saving and the grade the page would get.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📅</div>
+                    <h3>Your week, by site</h3>
+                    <p>See the sites you visited grouped by grade, how many grade C or better compared with last week, and a 7-day chart of your browsing's CO₂.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📡</div>
+                    <h3>Measures everything</h3>
+                    <p>Counts every file a page loads, including ads, embedded frames, and video that loads after the page appears. Pages served from cache still get a fair grade.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🌍</div>
+                    <h3>Established methods</h3>
+                    <p>CO₂ estimates use the Sustainable Web Design Model v4 via CO2.js from the Green Web Foundation. Everyday comparisons use U.S. EPA factors.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🪶</div>
+                    <h3>Light to run</h3>
+                    <p>The extension makes no network requests of its own. In testing, handling each request a page made took about 5 microseconds. Report details are gathered only when you open a report.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Grading Section -->
+    <section class="tech-section" id="grades">
+        <div class="container">
+            <h2 class="section-title">How grades work</h2>
+            <p class="section-intro">Grades follow the Digital Carbon Ratings from the Sustainable Web Design project. The cutoffs come from the sizes of real web pages in the HTTP Archive (June 2023). The scale is strict on purpose: the median web page earns an F.</p>
+            <table class="grade-table">
+                <thead><tr><th>Grade</th><th>Page weight up to</th><th>CO₂e per visit</th><th>Lighter than</th></tr></thead>
+                <tbody>
+                    <tr><td><span class="g" style="background:#059669">A+</span></td><td>273 KB</td><td>0.040 g</td><td>95% of pages</td></tr>
+                    <tr><td><span class="g" style="background:#10b981">A</span></td><td>531 KB</td><td>0.079 g</td><td>90%</td></tr>
+                    <tr><td><span class="g" style="background:#65a30d">B</span></td><td>976 KB</td><td>0.145 g</td><td>80%</td></tr>
+                    <tr><td><span class="g" style="background:#ca8a04">C</span></td><td>1.41 MB</td><td>0.209 g</td><td>70%</td></tr>
+                    <tr><td><span class="g" style="background:#ea580c">D</span></td><td>1.88 MB</td><td>0.278 g</td><td>60%</td></tr>
+                    <tr><td><span class="g" style="background:#dc2626">E</span></td><td>2.42 MB</td><td>0.359 g</td><td>50%</td></tr>
+                    <tr><td><span class="g" style="background:#9f1239">F</span></td><td>larger</td><td>0.360 g or more</td><td>heavier than the median page</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works" id="how-it-works">
+        <div class="container">
+            <h2 class="section-title">How it works</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Install and turn it on</h3>
+                        <p>A welcome page explains what the extension reads. Nothing is recorded until you click Start tracking.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Browse normally</h3>
+                        <p>Each site's grade appears on the toolbar icon once its first page finishes loading.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>See why</h3>
+                        <p>Open the popup and click Why this grade? for a breakdown of the page and what would improve it.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Watch your week</h3>
+                        <p>The popup shows how the sites you visit break down by grade, compared with the week before.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Privacy Section -->
+    <section class="privacy">
+        <div class="container">
+            <div class="privacy-content">
+                <div class="privacy-icon">🔒</div>
+                <div class="privacy-text">
+                    <h2>Everything stays on your device</h2>
+                    <p>The extension stores byte counts and domain names in your browser and makes no network requests. There are no accounts, analytics, or ads. Full page addresses are never saved, and report details are cleared when you close the tab. <a href="privacy.html">Read the privacy policy</a>.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section class="download" id="download">
+        <div class="container">
+            <h2 class="section-title">Download</h2>
+            <div class="download-content">
+                <div class="download-info">
+                    <h3>Version 1.2.0</h3>
+                    <p>The Chrome Web Store listing is coming soon. Until then, you can install the extension manually.</p>
+                    <div class="browser-support">
+                        <h4>Works in:</h4>
+                        <div class="browser-icons">
+                            <span class="browser-badge">Chrome</span>
+                            <span class="browser-badge">Edge</span>
+                            <span class="browser-badge">Brave</span>
+                        </div>
+                    </div>
+                    <a href="web-co2-report-card-v1.2.0.zip" class="btn btn-download" download>
+                        <span class="download-icon">⬇️</span>
+                        Download v1.2.0
+                    </a>
+                </div>
+                <div class="installation-steps">
+                    <h4>Install it manually:</h4>
+                    <ol>
+                        <li>Download the ZIP file and extract it to a folder.</li>
+                        <li>Open <code>chrome://extensions</code> (or <code>edge://extensions</code>, <code>brave://extensions</code>).</li>
+                        <li>Turn on Developer mode in the top right.</li>
+                        <li>Click Load unpacked and select the extracted folder.</li>
+                        <li>Click Start tracking on the welcome page, then reload any tabs that were already open.</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Web CO₂ Report Card</h3>
+                    <p>A browser extension that grades websites by their carbon footprint. Built by James Burney.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Credits</h4>
+                    <p>CO₂ estimates by <a href="https://github.com/thegreenwebfoundation/co2.js" target="_blank" rel="noopener">CO2.js</a> from the Green Web Foundation</p>
+                    <p>Grades use the <a href="https://sustainablewebdesign.org/digital-carbon-ratings/" target="_blank" rel="noopener">Digital Carbon Ratings</a></p>
+                    <p>Comparisons use the <a href="https://www.epa.gov/energy/greenhouse-gas-equivalencies-calculator" target="_blank" rel="noopener">EPA Greenhouse Gas Equivalencies</a></p>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Questions or feedback: <a href="mailto:james@jamesburney.com">james@jamesburney.com</a></p>
+                    <p><a href="privacy.html">Privacy policy</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 James Burney</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    e.preventDefault();
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+
+        // Fade in cards as they scroll into view
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+        document.querySelectorAll('.feature-card, .step').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(20px)';
+            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
