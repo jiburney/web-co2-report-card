@@ -9,7 +9,7 @@ Upload: `web-co2-report-card-v1.2.0.zip` (manifest.json is at the zip root, as t
 (Use the plain "2" in the store name so searches for "co2" match. The extension displays it as CO₂.)
 
 **Summary (132 char max):**
-Grade every site you visit for carbon, see why, and track your week. Runs locally; no data leaves your device.
+Carbon grades for every website, based on the data it loads. See why each site got its grade. Runs on your device.
 
 **Category:** Productivity (alternative: Tools)
 
