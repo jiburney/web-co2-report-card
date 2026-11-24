@@ -13,6 +13,12 @@ A Chrome/Firefox extension that tracks the estimated carbon emissions from your 
 - **Cross-browser**: Works on Chrome, Edge, Brave, and Firefox
 - **Lightweight**: <50ms performance overhead per page load
 
+## Project layout
+
+- `src/`, `public/`, `config/`: the extension (TypeScript, Manifest V3, built with webpack into `dist/`)
+- `docs/`: the landing page and privacy policy, published with GitHub Pages at https://jiburney.github.io/web-co2-report-card/
+- `test/fixtures/`: sample report output
+
 ## Installation (Development)
 
 1. Clone this repository

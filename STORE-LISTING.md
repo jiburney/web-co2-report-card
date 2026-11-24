@@ -64,8 +64,11 @@ Estimate and display the carbon emissions of the web pages the user loads.
 - Check **Web history** only if the dashboard's wording requires it for domain names stored locally. The data never leaves the device; say so in the justification field if one is offered.
 - Certify all three statements: not sold to third parties; not used for purposes unrelated to the single purpose; not used for creditworthiness or lending.
 
+**Homepage URL:**
+https://jiburney.github.io/web-co2-report-card/
+
 **Privacy policy URL:**
-https://jiburney.github.io/carbon-tracker-landing/privacy.html (confirm this URL once landing-page/privacy.html is pushed; replace CONTACT_EMAIL in that file first)
+https://jiburney.github.io/web-co2-report-card/privacy.html
 
 ## Account
 
