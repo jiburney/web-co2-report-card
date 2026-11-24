@@ -45,7 +45,7 @@ These are estimates. A few streamed responses don't report their size, so totals
 3. Welcome page showing the privacy disclosure
 4. Toolbar badge showing a page grade on a real site
 
-**Small promo tile (440x280):** required. Leaf + "Web CO2 Report Card" + one line.
+**Small promo tile (440x280):** `store-assets/promo-tile-440x280.png` Leaf + "Web CO2 Report Card" + one line.
 
 ## Privacy practices tab
 
