@@ -17,29 +17,40 @@
   <main class="policy">
     <p><a href="index.html">&larr; Web CO₂ Report Card</a></p>
     <h1>Privacy Policy</h1>
-    <p class="updated">Last updated: November 22, 2026</p>
+    <p class="updated">Last updated: November 24, 2026</p>
 
-    <p>Web CO₂ Report Card is a browser extension that estimates the carbon emissions of the web pages you load. It is built to work entirely on your device.</p>
+    <p>Web CO₂ Report Card is a browser extension that gives websites a carbon grade based on the data they load, and explains each grade. It runs entirely on your device.</p>
 
     <h2>What the extension reads</h2>
     <ul>
-      <li>The size of each network request a page makes, read from the browser's request events (<code>webRequest</code>) and Performance API. The extension sees each request's address while measuring it but does not store or transmit it.</li>
-      <li>The domain name of the site you're on (for example, <em>example.com</em>), used to grade the page and show which sites account for the most emissions.</li>
+      <li><strong>Network activity.</strong> The size of each network request a page makes, read from the browser's request events (<code>webRequest</code>) and the Performance API. The extension sees each request's address while measuring it but does not store or transmit it.</li>
+      <li><strong>Sites you visit.</strong> The domain name of the site you're on (for example, <em>example.com</em>), used to grade the site and show your weekly summary.</li>
+      <li><strong>Report details.</strong> When you open a "Why this grade?" report, the extension reads the list of files on that page (their addresses, sizes, types, and response headers such as compression) and the pixel dimensions of its images. This detail is kept in memory for the open tab only, cleared when the tab navigates or closes, and never stored or sent anywhere.</li>
     </ul>
-    <p>When you open a "Why this grade?" report, the extension reads the list of files on that page (their addresses, sizes, types, and response headers such as compression) and the pixel dimensions of its images, so it can explain the page's grade. This detail is kept in memory for the open tab only, cleared when the tab navigates or closes, and never stored or sent anywhere.</p>
-    <p>The extension does not store full URLs and does not read page content, form inputs, passwords, cookies, or any personal information.</p>
+    <p>The extension does not store full URLs and does not read page text, form inputs, passwords, cookies, or personal information such as your name or email address.</p>
 
-    <h2>Where data is stored</h2>
-    <p>All data is stored locally in your browser's extension storage (<code>chrome.storage.local</code>) on your device. It includes running totals, a per-domain total, a page count, the date tracking started, and your display settings. Byte counts for open tabs are held in temporary session storage and cleared when the browser closes.</p>
+    <h2>What is stored, and for how long</h2>
+    <p>Everything is stored in your browser's extension storage (<code>chrome.storage.local</code>) on your device:</p>
+    <ul>
+      <li><strong>Daily history:</strong> for each day, estimated grams of CO₂, the number of pages loaded, and the domains you visited with their page counts. Kept for 365 days; older days are deleted automatically.</li>
+      <li><strong>Site grades:</strong> for each site, the page weights of the last 20 pages you loaded there and the date you last visited. Up to 3,000 sites are kept; the least recently visited are removed first.</li>
+      <li><strong>Totals:</strong> running CO₂ totals, a per-domain total, a page count, and the date tracking started.</li>
+      <li><strong>Settings:</strong> your theme and whether tracking is on.</li>
+    </ul>
+    <p>Byte counts for open tabs are held in temporary session storage and cleared when the browser closes.</p>
+
+    <h2>How the data is used</h2>
+    <p>This data is used only to show site grades, the "Why this grade?" report, and your weekly summary inside the extension. It is not used for advertising, profiling, or any other purpose.</p>
 
     <h2>What is shared</h2>
     <p>Nothing. The extension makes no network requests and sends no data to the developer or any third party. There are no accounts, analytics, advertising, or tracking. Data is never sold or transferred.</p>
+    <p>The use of information received by this extension adheres to the <a href="https://developer.chrome.com/docs/webstore/program-policies/" target="_blank" rel="noopener">Chrome Web Store User Data Policy</a>, including the Limited Use requirements.</p>
 
     <h2>Consent</h2>
-    <p>Tracking is off when the extension is installed. Nothing is recorded until you read the disclosure and choose <strong>Start tracking</strong>.</p>
+    <p>Tracking is off when the extension is installed. Nothing is recorded until you read the disclosure on the welcome page or in the popup and choose <strong>Start tracking</strong>.</p>
 
     <h2>Deleting your data</h2>
-    <p>Click <strong>Reset Counter</strong> in the extension popup to erase all emissions data. Removing the extension deletes everything it stored.</p>
+    <p>Click <strong>Reset Counter</strong> in the extension popup to erase all stored history, totals, and site grades. Your theme setting is kept. Removing the extension deletes everything it stored.</p>
 
     <h2>Changes</h2>
     <p>If this policy or the extension's data practices change, the change will be described here and shown in the extension before it takes effect.</p>
